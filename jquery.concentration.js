@@ -143,7 +143,7 @@ $.fn.concentration = function (options) {
     // 'this' is single dom element (div usually) where the game sits
     var $this = $(this);
     var fronts; // array of img for card fronts. 2 of each, shuffled
-    var $table = $('<table></table'); // layout table in game div
+    var $table = $('<table class="jqConcentrationTable"></table'); // layout table in game div
     var $row; // current row of table
     // game data
     $this.data('data', {
