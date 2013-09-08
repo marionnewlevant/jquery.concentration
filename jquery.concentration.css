@@ -1,0 +1,18 @@
+.jqConcentrationCard {
+  position: relative;
+  height: 100px; width: 100px;
+  cursor: pointer; cursor: hand;
+}
+.jqConcentrationCard img {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 8;
+}
+.jqConcentrationCard img.jqConcentrationUp { z-index:10; }
+.jqConcentrationCard img.jqConcentrationUp-last { z-index: 9; }
+.jqConcentrationMatched { cursor: auto; }
+
+.jqConcentrationTable {
+  border-collapse: separate;
+  border-spacing: 5px;
+}

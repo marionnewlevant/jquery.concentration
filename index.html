@@ -1,0 +1,53 @@
+---
+layout: default
+title: Github (jquery.concentration) | Marion Newlevant
+---
+
+{%capture layout_primary%}
+  <h1>jquery.concentration.js</h1>
+
+  <div id="concentration"></div>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/jquery.concentration.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#concentration').concentration({
+        fronts: [ // images for card fronts. 8 of these will be picked at random
+          '/img/thumb_1.png',
+          '/img/thumb_2.png',
+          '/img/thumb_3.png',
+          '/img/thumb_4.png',
+          '/img/thumb_5.png',
+          '/img/thumb_6.png',
+          '/img/thumb_7.png',
+          '/img/thumb_8.png',
+          '/img/thumb_9.png',
+          '/img/thumb_10.png',
+          '/img/thumb_11.png',
+          '/img/thumb_12.png',
+          '/img/thumb_13.png',
+          '/img/thumb_14.png',
+          '/img/thumb_15.png',
+          '/img/thumb_16.png',
+          '/img/thumb_17.png',
+          '/img/thumb_18.png',
+          '/img/thumb_19.png',
+          '/img/thumb_20.png',
+          '/img/thumb_21.png'
+        ],
+        back: '/img/thumb_back.png', // image for card back
+        pairs: 8, // number of card pairs (so 16 cards). 8 is the default
+        columns: 4 // 4 is the default
+      });
+    });
+  </script>
+  <p>Click on two cards to see if they match.</p>
+{% endcapture %}
+{%capture layout_secondary%}
+  <h1>Notes</h1>
+  <p>
+    Images &copy; <a href="http://newlevant.com">Hazel Newlevant</a>.
+    Reload the page to get a new game. The only reward for matching all the cards is the satisfaction of having done it.
+  </p>
+{% endcapture %}
+{%include layout.html%}
