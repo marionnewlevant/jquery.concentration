@@ -8,34 +8,34 @@ title: Github (jquery.concentration) | Marion Newlevant
 
   <div id="concentration"></div>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="/jquery.concentration.js"></script>
+  <script type="text/javascript" src="/{{site.repo}}/jquery.concentration.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $('#concentration').concentration({
         fronts: [ // images for card fronts. 8 of these will be picked at random
-          '/img/thumb_1.png',
-          '/img/thumb_2.png',
-          '/img/thumb_3.png',
-          '/img/thumb_4.png',
-          '/img/thumb_5.png',
-          '/img/thumb_6.png',
-          '/img/thumb_7.png',
-          '/img/thumb_8.png',
-          '/img/thumb_9.png',
-          '/img/thumb_10.png',
-          '/img/thumb_11.png',
-          '/img/thumb_12.png',
-          '/img/thumb_13.png',
-          '/img/thumb_14.png',
-          '/img/thumb_15.png',
-          '/img/thumb_16.png',
-          '/img/thumb_17.png',
-          '/img/thumb_18.png',
-          '/img/thumb_19.png',
-          '/img/thumb_20.png',
-          '/img/thumb_21.png'
+          '/{{site.repo}}/img/thumb_1.png',
+          '/{{site.repo}}/img/thumb_2.png',
+          '/{{site.repo}}/img/thumb_3.png',
+          '/{{site.repo}}/img/thumb_4.png',
+          '/{{site.repo}}/img/thumb_5.png',
+          '/{{site.repo}}/img/thumb_6.png',
+          '/{{site.repo}}/img/thumb_7.png',
+          '/{{site.repo}}/img/thumb_8.png',
+          '/{{site.repo}}/img/thumb_9.png',
+          '/{{site.repo}}/img/thumb_10.png',
+          '/{{site.repo}}/img/thumb_11.png',
+          '/{{site.repo}}/img/thumb_12.png',
+          '/{{site.repo}}/img/thumb_13.png',
+          '/{{site.repo}}/img/thumb_14.png',
+          '/{{site.repo}}/img/thumb_15.png',
+          '/{{site.repo}}/img/thumb_16.png',
+          '/{{site.repo}}/img/thumb_17.png',
+          '/{{site.repo}}/img/thumb_18.png',
+          '/{{site.repo}}/img/thumb_19.png',
+          '/{{site.repo}}/img/thumb_20.png',
+          '/{{site.repo}}/img/thumb_21.png'
         ],
-        back: '/img/thumb_back.png', // image for card back
+        back: '/{{site.repo}}/img/thumb_back.png', // image for card back
         pairs: 8, // number of card pairs (so 16 cards). 8 is the default
         columns: 4 // 4 is the default
       });
