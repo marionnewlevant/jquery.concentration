@@ -42,6 +42,37 @@ title: Github (jquery.concentration) | Marion Newlevant
     });
   </script>
   <p>Click on two cards to see if they match.</p>
+  <h2>Code</h2>
+  <pre class="brush: js">
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;link type="text/css" rel="stylesheet" href="jquery.concentration.css"/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="concentration"&gt;&lt;/div&gt;
+  &lt;script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript" src="jquery.concentration.js"&gt;&lt;/script&gt;
+  &lt;script type="text/javascript"&gt;
+    $(document).ready(function(){
+      $('#concentration').concentration({
+        fronts: [ // images for card fronts. 8 of these will be picked at random
+          'img/thumb_1.png', 'img/thumb_2.png', 'img/thumb_3.png', 'img/thumb_4.png',
+          'img/thumb_5.png', 'img/thumb_6.png', 'img/thumb_7.png', 'img/thumb_8.png',
+          'img/thumb_9.png', 'img/thumb_10.png', 'img/thumb_11.png', 'img/thumb_12.png',
+          'img/thumb_13.png', 'img/thumb_14.png', 'img/thumb_15.png', 'img/thumb_16.png',
+          'img/thumb_17.png', 'img/thumb_18.png', 'img/thumb_19.png', 'img/thumb_20.png',
+          'img/thumb_21.png'
+        ],
+        back: 'img/thumb_back.png', // image for card back
+        pairs: 8, // number of card pairs (so 16 cards). 8 is the default
+        columns: 4 // 4 is the default
+      });
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
 {% endcapture %}
 {%capture layout_secondary%}
   <h1>Notes</h1>
